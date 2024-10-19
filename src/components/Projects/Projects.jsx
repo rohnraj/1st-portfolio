@@ -1,10 +1,9 @@
 import React from 'react'
 import styles from './Projects.module.css'
-import viberr from '../../assets/viberr.png'
 import ProjectsCard from '../../common/ProjectsCard'
-import freshBurger from '../../assets/fresh-burger.png'
-import hipssterGlasses from '../../assets/hipsster.png'
-import fitlift from '../../assets/fitlift.png'
+import sortingVisualizer from '../../assets/sorting visualizer logo.png'
+import Linka from '../../assets/Linka Logo.png'
+import UrbanCart from '../../assets/UrbanCart logo.png'
 
 function Projects() {
   return (
@@ -12,29 +11,29 @@ function Projects() {
         <h1 className='sectionTitle' id={styles.title}>Projects</h1>
         <div className={styles.projectsContainer}>
             <ProjectsCard 
-                src={viberr}
-                link={"https://github.com/rohnraj?tab=repositories"}
-                h3="Viberr"
-                p="Streaming app"
+                src={Linka}
+                link={"https://github.com/rohnraj/Linka-a-social-media-site-"}
+                h3="Lika"
+                p="A social Media Site"
             />
             <ProjectsCard 
-                src={freshBurger}
-                link={"https://github.com/rohnraj?tab=repositories"}
-                h3="Fresh Burger"
-                p="Food Devlivary app"
+                src={UrbanCart}
+                link={"https://github.com/rohnraj/UrbanCart"}
+                h3="Urban Cart"
+                p="A E-commerse platform"
             />
             <ProjectsCard 
-                src={hipssterGlasses}
-                link={"https://github.com/rohnraj?tab=repositories"}
-                h3="Hipsster Glasses"
-                p="Glasses E-commerce app"
+                src={sortingVisualizer}
+                link={"https://github.com/rohnraj/sorting-visualizer"}
+                h3="Sorting Visualizer"
+                p="Analyse sorting Algorithms"
             />
-            <ProjectsCard 
+            {/* <ProjectsCard 
                 src={fitlift}
                 link={"https://github.com/rohnraj?tab=repositories"}
                 h3="Fit Lift"
                 p="Fitness app"
-            />
+            /> */}
         </div>
     </section>
   )
