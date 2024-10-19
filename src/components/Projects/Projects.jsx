@@ -13,7 +13,7 @@ function Projects() {
             <ProjectsCard 
                 src={Linka}
                 link={"https://github.com/rohnraj/Linka-a-social-media-site-"}
-                h3="Lika"
+                h3="Linka"
                 p="A social Media Site"
             />
             <ProjectsCard 
