@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './HeroStyle.module.css'
-import heroImg from '../../assets/hero-img.png'
+import heroImg from '../../assets/rohan animated main 2.png'
 import sunImg from '../../assets/sun.svg'
 import moonImg from '../../assets/moon.svg'
 import XLogoLight from '../../assets/twitter-light.svg'
@@ -9,8 +9,11 @@ import githubLogoLight from '../../assets/github-light.svg'
 import githubDark from '../../assets/github-dark.svg'
 import linkedinLogoLight from '../../assets/linkedin-light.svg'
 import linkedinLogoDark from '../../assets/linkedin-dark.svg'
-import cv from '../../assets/cv.pdf'
+import leetcodelogo from '../../assets/leetcode logo.png'
+import cv from '../../assets/My_Resume_latest.pdf'
 import { useTheme } from '../../common/ThemeContext'
+// import Spline from '@splinetool/react-spline/next';
+
 
 function Hero() {
     const {theme, toggleTheme}=useTheme();
@@ -37,16 +40,19 @@ function Hero() {
             <div className={styles.infomation}>
 
             <h1>Rohan <br/> Raj</h1>
-            <h2>MERN Stack Developer</h2>
+            <h2>Full Stack Developer</h2>
             <span>
-                <a href="http://twitter.com/" target='_blank'>
+                <a href="https://x.com/rohn_raj" target='_blank'>
                     <img src={xIcon} alt="X logo" />
                 </a>
-                <a href="http://github.com/" target='_blank'>
-                    <img src={githubIcon} alt="X logo" />
+                <a href="https://github.com/rohnraj" target='_blank'>
+                    <img src={githubIcon} alt="github logo" />
                 </a>
-                <a href="http://linkedin.com/" target='_blank'>
-                    <img src={linkedinIcon} alt="X logo" />
+                <a href="https://www.linkedin.com/in/rohan-raj-54a1601ab/" target='_blank'>
+                    <img src={linkedinIcon} alt="Linkedin logo" />
+                </a>
+                <a href="https://leetcode.com/u/Rohnraj/" target='_blank' className={styles.leetcodeLogo}>
+                    <img src={leetcodelogo} alt="leetcode logo" />
                 </a>
             </span>
             <p className={styles.discription}>With a passion for developing modern React web apps for commercial businesses    
