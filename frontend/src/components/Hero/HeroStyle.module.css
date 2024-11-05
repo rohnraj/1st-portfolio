@@ -1,0 +1,147 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  height: 100vh;
+  min-height: 500px;
+  position: relative;
+  top:30px;
+}
+
+.changeColorMode {
+  position: relative;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.heroimg {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.herosImg {
+  height: 350px;
+  width: 350px;
+}
+
+.ModeChangeImg {
+  position: absolute;
+  right: 0;
+  width: 25px;
+  top: 70px;
+  cursor: pointer;
+}
+
+.infomation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+span {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+a {
+  width: fit-content;
+  align-self: center;
+}
+
+a img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+a:hover img {
+  transform: scale(1.1);
+}
+
+.leetcodeLogo {
+  width: 35px;  /* Adjust size to match other logos */
+  height: 35px;
+  align-self: center;
+}
+
+.discription {
+  max-width: 36ch;
+  align-self: center;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+button {
+  background-color: var(--btn-color);
+  color: var(--btn-text-color);
+  border: none;
+  border-radius: 20px;
+  width: 126px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 800px) {
+  .info {
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 150px;
+  }
+
+  .heroimg {
+      max-width: 350px;
+      width: 350px;
+  }
+
+  .herosImg {
+      height: 380px;
+      width: 380px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .info .hero {
+      max-width: 400px;
+      width: 400px;
+  }
+}
