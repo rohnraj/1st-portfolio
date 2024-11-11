@@ -10,7 +10,13 @@ mongoose.connect('mongodb+srv://rohnraj027:LNQoL3dmeb26R4Xi@cluster0.nq7o2.mongo
 .catch((e) => console.log(`Server not connected to DB: ${e}`));
 
 // dummySeeding()
-app.use(cors())
+app.use(cors(
+    {
+        origin:['https://1st-portfolio-pjtu.vercel.app'],
+        method:["POST","GET"],
+        credentials:true
+    }
+))
 app.use(express.json());
 app.use(routes)
 
