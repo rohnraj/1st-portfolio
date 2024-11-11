@@ -5,7 +5,7 @@ const dummySeeding=require('./seed')
 const app=express()
 const routes=require('./apis/userDataRouts')
 
-mongoose.connect('mongodb://127.0.0.1:27017/portfolioData')
+mongoose.connect('mongodb+srv://rohnraj027:1f7rOBZXNYyFzCFV@guests.rj0vl.mongodb.net/portfolioData?retryWrites=true&w=majority&appName=Guests')
 .then(() => console.log('Connected!'))
 .catch((e) => console.log(`Server not connected to DB: ${e}`));
 
