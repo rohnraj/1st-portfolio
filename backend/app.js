@@ -5,7 +5,7 @@ const dummySeeding=require('./seed')
 const app=express()
 const routes=require('./apis/userDataRouts')
 
-mongoose.connect('mongodb+srv://rohnraj027:1f7rOBZXNYyFzCFV@guests.rj0vl.mongodb.net/portfolioData?retryWrites=true&w=majority&appName=Guests')
+mongoose.connect('mongodb+srv://rohnraj027:LNQoL3dmeb26R4Xi@cluster0.nq7o2.mongodb.net/portfoliodata?retryWrites=true&w=majority&appName=Cluster0')
 .then(() => console.log('Connected!'))
 .catch((e) => console.log(`Server not connected to DB: ${e}`));
 
