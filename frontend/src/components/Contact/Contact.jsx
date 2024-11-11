@@ -16,7 +16,7 @@ function Contact() {
     // console.log(message);
     try{
 
-      axios.post('http://localhost:8080/Thankyou',{name,email,message})
+      axios.post('1st-portfolio-seven.vercel.app/Thankyou',{name,email,message})
     }
     catch(e){
       console.log("data can't send");
